@@ -37,6 +37,7 @@ public class ExampleModCore {
     public void preinit(FMLPreInitializationEvent event){
         //PreInitでMetadataの情報を読み込む
         loadMeta();
+        ExampleModRegistry.registerPreInit(event);
     }
 
     @Mod.EventHandler

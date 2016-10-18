@@ -10,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
@@ -42,7 +42,7 @@ minecraft {
 }
 
 dependencies {
-    compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3'
+    compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
     compile 'org.jetbrains:annotations:13.0'
 
 }
