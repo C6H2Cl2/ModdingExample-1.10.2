@@ -1,6 +1,7 @@
 package c6h2cl2.ExampleMod;
 
 import c6h2cl2.ExampleMod.Item.ExampleItem;
+import c6h2cl2.ExampleMod.Item.RightClickExampleItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -14,12 +15,15 @@ import org.jetbrains.annotations.NotNull;
 public class ExampleModRegistry {
 
     public static final Item exampleItem = new ExampleItem();
+    public static final Item rightClickExampleItem = new RightClickExampleItem();
 
     public static void registerPreInit(FMLPreInitializationEvent event){
         GameRegistry.register(exampleItem);
+        GameRegistry.register(rightClickExampleItem);
 
         if(event.getSide().isClient()){
             setCustomModelResourceLocation(exampleItem);
+            setCustomModelResourceLocation(rightClickExampleItem);
         }
     }
 
